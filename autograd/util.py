@@ -132,7 +132,6 @@ def flatten(value):
     else:
         raise Exception("Don't know how to flatten type {}".format(type(value)))
 
-
 def flatten_func(func, example):
     """Flattens both the inputs to a function, and the outputs."""
     flattened_example, unflatten = flatten(example)
